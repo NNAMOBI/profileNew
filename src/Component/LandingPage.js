@@ -1,6 +1,6 @@
 import React, { Component } from 'react'; 
 import { Grid, Cell } from 'react-mdl'
-import ProfileImage from '../Component/profileImage2.jpg'
+import ProfileImage from '../Component/images/profileImage2.jpg'
 
 
 class Landingpage extends Component {
@@ -16,7 +16,7 @@ class Landingpage extends Component {
 
                             <hr />
                             <p>
-                                HTML | CSS | Bootstrap | Javascript | React | Express | NodeJs | MongoDB
+                                HTML5 | CSS3 | Bootstrap | Javascript | React | Express | NodeJs | MongoDB
                             </p>
                             <div className="social-links">
                                 {/* linkedin*/}
