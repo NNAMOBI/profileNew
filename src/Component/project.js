@@ -3,7 +3,8 @@ import {Tabs, Tab, Grid, Cell, Card, CardActions, CardText, Button, CardTitle, C
 import Background from '../Component/images/react-image.png'
 import Background2 from '../Component/images/backgroundproj1.jpg'
 import Background3 from '../Component/images/figmaImage.png'
-import Background4 from  '../Component/images/bootstrapImage1.png'
+import Background4 from '../Component/images/bootstrapImage1.png'
+import Background5 from '../Component/images/jquery.jpg'
 
 
 
@@ -56,7 +57,7 @@ class Project extends Component {
                         •	I created a clock app using REACT JavaScript.
                         </CardText>
                     <CardActions border>
-                        <Button colored>GitHub</Button>
+                            <Button colored> GitHub</Button>
                         <Button colored>LiveDemo</Button>
                         <CardMenu style={{ color: "#fff" }}>
                             <IconButton name='share' />
@@ -72,7 +73,7 @@ class Project extends Component {
             return (
                 <Card shadow={5} style={{ minWidth: "550", margin: "auto", height: '550' }}>
                     <CardTitle style={{ color: "#000", height: "176px", backgroundImage: `url(${Background2})`, backgroundPosition: "center", backgroundSize: "cover" }}>
-                        React Project #1
+                        HTML5/CSS3 Project #1
 
                     </CardTitle>
                     <CardText>
@@ -98,7 +99,7 @@ and EXPRESS JS backend using the CRUD operation.</CardText>
                     <CardTitle style={{
                         color: "#000", height: "176px", backgroundImage: `url(${Background3})`, backgroundPosition: "center", backgroundSize: "cover"
                     }}>
-                        React Project #1
+                        Figma Project #1
 
                     </CardTitle>
                     <CardText>
@@ -123,7 +124,7 @@ and EXPRESS JS backend using the CRUD operation.</CardText>
                     <CardTitle style={{
                         color: "#000", height: "176px", backgroundImage: `url(${Background4})`, backgroundPosition: "center", backgroundSize: "cover", 
                     }}>
-                        React Project #1
+                        Bootstrap Project #1
 
                     </CardTitle>
                     <CardText>
@@ -144,7 +145,27 @@ and EXPRESS JS backend using the CRUD operation.</CardText>
         }
         else if (this.state.activeTab === 4) {
             return(
-                <div><h1>This is MongoDB</h1></div>
+                <Card shadow={5} style={{ minWidth: "550", margin: "auto", height: '550' }}>
+                    <CardTitle style={{
+                        color: "#000", height: "176px", backgroundImage: `url(${Background5})`, backgroundPosition: "center", backgroundSize: "cover"
+                    }}>
+                        <span style={{marginTop: "200px", fontSize: "120%", fontWeight: "bold"}}>Jquery Project #1</span>
+
+                    </CardTitle>
+                    <CardText>
+                    </CardText>
+                    <CardActions border>
+                        <Button colored>GitHub</Button>
+                        
+                        <Button colored>LiveDemo</Button>
+                        <CardMenu style={{ color: "#fff" }}>
+                            <IconButton name='share' />
+                        </CardMenu>
+
+                    </CardActions>
+
+
+                </Card>
             )
         }
     }
@@ -157,7 +178,7 @@ and EXPRESS JS backend using the CRUD operation.</CardText>
                     <Tab>HTML5|CSS3</Tab>
                     <Tab>Figma</Tab>
                     <Tab>Bootstrap</Tab>
-                    <Tab>MongoDB</Tab>
+                    <Tab>Jquery</Tab>
                 </Tabs>
                 
                     <Grid>
