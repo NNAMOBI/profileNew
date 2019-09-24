@@ -12,7 +12,7 @@ class Landingpage extends Component {
 
                         <img src={ProfileImage} alt="me" className="my-image" />
                         <div className="banner-text">
-                            <h1>Full Stack Web developer</h1>
+                            <h1>FULLSTACK WEB developer</h1>
 
                             <p>
                                 HTML5 | CSS3 | Bootstrap | Javascript | React | Express | NodeJs | MongoDB
