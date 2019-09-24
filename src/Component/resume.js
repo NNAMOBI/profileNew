@@ -14,7 +14,7 @@ class Resume extends Component {
                 <Grid>
                     <Cell col={4}>
                         <div style={{ textAlign: "center" }}>
-                            <img src={educationProfile} alt="edu" style={{ height: '300px', width: "300px", borderRadius: "40%" }} />
+                            <img src={educationProfile} alt="edu" style={{ height: '300px', width: "100%", borderRadius: "40%" }} />
                         </div>
 
                         <h2 style={{ paddingTop: "2em"}}>Osuagwu Nnamdi</h2>

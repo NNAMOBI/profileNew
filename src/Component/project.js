@@ -5,6 +5,7 @@ import Background2 from '../Component/images/backgroundproj1.jpg'
 import Background3 from '../Component/images/figmaImage.png'
 import Background4 from '../Component/images/bootstrapImage1.png'
 import Background5 from '../Component/images/jquery.jpg'
+// import {Link } from 'react-router-dom'
 
 
 
@@ -33,8 +34,10 @@ class Project extends Component {
                         
 </CardText>
                     <CardActions border>
-                        <Button colored>GitHub</Button>
-                        <Button colored>LiveDemo</Button>
+                            <Button colored><a href="https://github.com/NNAMOBI/small-blog-app"
+                                target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>GitHub</a></Button>
+                            <Button colored><a href="https://small-blog-app.herokuapp.com/"
+                                target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>LiveDemo</a></Button>
                         <CardMenu style={{ color: "#fff" }}>
                             <IconButton name='share' />
                         </CardMenu>
@@ -57,8 +60,10 @@ class Project extends Component {
                         •	I created a clock app using REACT JavaScript.
                         </CardText>
                     <CardActions border>
-                            <Button colored> GitHub</Button>
-                        <Button colored>LiveDemo</Button>
+                            <Button colored><a href="https://github.com/NNAMOBI/ReactClock-App"
+                                target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}> GitHub</a></Button>
+                            <Button colored ><a href="https://civicodengclock.herokuapp.com/"
+                                target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>LiveDemo</a></Button>
                         <CardMenu style={{ color: "#fff" }}>
                             <IconButton name='share' />
                         </CardMenu>
@@ -71,18 +76,20 @@ class Project extends Component {
             )
         } else if (this.state.activeTab === 1) {
             return (
+                <div className="projects-grid">
                 <Card shadow={5} style={{ minWidth: "550", margin: "auto", height: '550' }}>
                     <CardTitle style={{ color: "#000", height: "176px", backgroundImage: `url(${Background2})`, backgroundPosition: "center", backgroundSize: "cover" }}>
                         HTML5/CSS3 Project #1
 
                     </CardTitle>
                     <CardText>
-                        •	Created  a small scale Blog, Signup, Login, Publishpost component  with REACT JS which hits an end point at NODE JS
-and EXPRESS JS backend using the CRUD operation.</CardText>
+                        •	A single webpage with html and css(still developing the site).</CardText>
                     <CardActions border>
-                        <Button colored>GitHub</Button>
-                        <Button colored>codepen</Button>
-                        <Button colored>LiveDemo</Button>
+                        <Button colored><a href="https://github.com/NNAMOBI/newbie-starbuzz-cofee-website"
+                            target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>GitHub</a></Button>
+                        
+                        <Button colored><a href="https://nnamobi.github.io/newbie-starbuzz-cofee-website/"
+                            target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>LiveDemo</a></Button>
                         <CardMenu style={{ color: "#fff" }}>
                             <IconButton name='share' />
                         </CardMenu>
@@ -90,31 +97,57 @@ and EXPRESS JS backend using the CRUD operation.</CardText>
                     </CardActions>
 
 
-                </Card> 
+                    </Card> 
+                    
+                    <Card shadow={5} style={{ minWidth: "550", margin: "auto", height: '550' }}>
+                        <CardTitle style={{ color: "#000", height: "176px", backgroundImage: `url(${Background2})`, backgroundPosition: "center", backgroundSize: "cover" }}>
+                            HTML5/CSS3 Project #2
+    
+                    </CardTitle>
+                        <CardText>
+                            •	Created  a simple Signup and Login form with HTML/CSS3</CardText>
+                        <CardActions border>
+                            <Button colored><a href="https://github.com/NNAMOBI/newform/tree/gh-pages"
+                                target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>GitHub</a></Button>
+
+                            <Button colored><a href=" https://nnamobi.github.io/newform/"
+                                target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>LiveDemo</a></Button>
+                            <CardMenu style={{ color: "#fff" }}>
+                                <IconButton name='share' />
+                            </CardMenu>
+
+                        </CardActions>
+
+
+                    </Card>
+
+                </div>
             )
         }
         else if (this.state.activeTab === 2) {
             return (
                 <Card shadow={5} style={{ minWidth: "550", margin: "auto", height: '550' }}>
                     <CardTitle style={{
-                        color: "#000", height: "176px", backgroundImage: `url(${Background3})`, backgroundPosition: "center", backgroundSize: "cover"
+                        color: "#000", height: "176px", backgroundImage: `url(${Background5})`, backgroundPosition: "center", backgroundSize: "cover"
                     }}>
-                        Figma Project #1
+                        <span style={{ marginTop: "200px", fontSize: "120%", fontWeight: "bold" }}>Jquery Project #1</span>
 
+                    
                     </CardTitle>
                     <CardText>
-                        </CardText>
+                        •	I developed a weather app that outputs the weather report of any state in Nigeria( still developing this app) .
+                    </CardText>
                     <CardActions border>
-                        <Button colored>GitHub</Button>
-                        <Button colored>codepen</Button>
-                        <Button colored>LiveDemo</Button>
+                        <Button colored><a href="https://github.com/NNAMOBI/weather-app"
+                            target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>GitHub</a></Button>
+
+                        <Button colored className="color" ><a href="https://nnamobi.github.io/weather-app/"
+                            target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>LiveDemo </a></Button>
                         <CardMenu style={{ color: "#fff" }}>
                             <IconButton name='share' />
                         </CardMenu>
 
                     </CardActions>
-
-
                 </Card>
             )
         }
@@ -124,10 +157,11 @@ and EXPRESS JS backend using the CRUD operation.</CardText>
                     <CardTitle style={{
                         color: "#000", height: "176px", backgroundImage: `url(${Background4})`, backgroundPosition: "center", backgroundSize: "cover", 
                     }}>
-                        Bootstrap Project #1
+                        Bootstrap Project #1(In progress)
 
                     </CardTitle>
                     <CardText>
+                        •	I developed a weather app that outputs the weather report of any state in Nigeria .
                         </CardText>
                     <CardActions border>
                         <Button colored>GitHub</Button>
@@ -144,25 +178,26 @@ and EXPRESS JS backend using the CRUD operation.</CardText>
             )
         }
         else if (this.state.activeTab === 4) {
-            return(
+            return (
+                    
                 <Card shadow={5} style={{ minWidth: "550", margin: "auto", height: '550' }}>
-                    <CardTitle style={{
-                        color: "#000", height: "176px", backgroundImage: `url(${Background5})`, backgroundPosition: "center", backgroundSize: "cover"
-                    }}>
-                        <span style={{marginTop: "200px", fontSize: "120%", fontWeight: "bold"}}>Jquery Project #1</span>
+                        <CardTitle style={{
+                            color: "#000", height: "176px", backgroundImage: `url(${Background3})`, backgroundPosition: "center", backgroundSize: "cover"
+                        }}>
+                            <span style={{ marginTop: "200px", fontSize: "120%", fontWeight: "bold" }}>Figma Project #1(In progress)</span>
 
-                    </CardTitle>
-                    <CardText>
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>GitHub</Button>
-                        
-                        <Button colored>LiveDemo</Button>
-                        <CardMenu style={{ color: "#fff" }}>
-                            <IconButton name='share' />
-                        </CardMenu>
+                        </CardTitle>
+                        <CardText>
+                        </CardText>
+                        <CardActions border>
+                            <Button colored>GitHub</Button>
 
-                    </CardActions>
+                            <Button colored>LiveDemo</Button>
+                            <CardMenu style={{ color: "#fff" }}>
+                                <IconButton name='share' />
+                            </CardMenu>
+
+                        </CardActions>
 
 
                 </Card>
@@ -176,9 +211,9 @@ and EXPRESS JS backend using the CRUD operation.</CardText>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId)=> this.setState({activeTab: tabId})} ripple>
                     <Tab>React</Tab>
                     <Tab>HTML5|CSS3</Tab>
-                    <Tab>Figma</Tab>
-                    <Tab>Bootstrap</Tab>
                     <Tab>Jquery</Tab>
+                    <Tab>Bootstrap</Tab>
+                    <Tab>Figma</Tab>
                 </Tabs>
                 
                     <Grid>
